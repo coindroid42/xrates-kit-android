@@ -71,7 +71,7 @@ class XRatesKit(
             val storage = Storage(Database.create(context))
 
             val apiManager = ApiManager()
-            val cryptoCompareProvider = CryptoCompareProvider(factory, apiManager, "https://min-api.cryptocompare.com")
+            val cryptoCompareProvider = CryptoCompareProvider(factory, apiManager, "https://ticker.coindroid.org")
 
             val historicalRateManager = HistoricalRateManager(storage, cryptoCompareProvider)
 
